@@ -1,0 +1,18 @@
+@import "navbar.css";
+@import "landing.css";
+@import "blog.css";
+@import "footer.css";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: 	#2c2c2c;
+    color: #fffff9;
+    overflow-x: hidden;
+    margin: 1rem;
+    
+}

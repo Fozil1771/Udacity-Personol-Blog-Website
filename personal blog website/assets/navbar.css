@@ -1,0 +1,40 @@
+.nav {
+    display:flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border-bottom: 2px solid ;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #ffe;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 1rem;
+    transition: color .7s;
+}
+.nav a:hover {
+ cursor: pointer;
+ background-color: #ffe;
+ color: #444444;
+}
+.nav a:nth-of-type(1){
+    margin-right: auto;
+}
+
+@media screen and (max-width: 467px){
+    .nav a {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .nav {
+        padding: 3rem;
+    }
+    .nav a {
+        padding: 1rem;
+        font-size: 2rem;
+    }
+}

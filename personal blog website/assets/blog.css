@@ -1,0 +1,201 @@
+.page {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.sub-title {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+}
+.sub-title p {
+    align-self: center;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.blog-main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4fr 2fr 4fr 2fr;
+    grid-gap: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 3rem 0 3rem;
+    border-bottom: 2px solid;
+}
+
+
+.blog-img1 {
+    background-image: url("../img/tashkent.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+}
+
+.blog-img2 {
+    background-image: url("../img/samarqand-day.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pre-post {
+    margin: 1rem;
+}
+
+.posts {
+   
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.fig-posts {
+    display: flex;
+    justify-content: space-around;
+}
+
+.image {
+     max-width: 100%;
+     transition: transform .4s;
+     cursor: pointer;
+}
+
+.image:hover {
+    transform: rotate(10deg);
+}
+
+.fig-caption {
+    padding: 1rem 2rem 1rem 2rem;
+}
+
+.fig-caption figcaption {
+    display: flex;
+    justify-content: center;
+    transition: transform .3s;
+    cursor: pointer;
+}
+
+.fig-caption figcaption:hover {
+    transform: translateX(5px);
+}
+
+.post {
+    transition: transform .4s;
+}
+.post:hover {
+    transform: rotate(10deg);
+}
+
+.about{
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    border-top: 2px solid;
+
+ }
+ .user-photo {
+     width: 10rem;
+     height: 10rem;
+     border-radius: 50%;
+ }
+
+ .user-info {
+     font-size: 1.2rem;
+     margin-top: 2rem;
+     width: 22rem;
+     line-height: 1.3rem;
+ }
+
+ .user-info p {
+     margin: 1rem;
+ }
+
+@media screen and (max-width: 467px){
+    .sub-title h2 {
+        font-size: 1.4rem;
+    }
+
+    .blog-main {
+        margin: 0;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;        
+    }
+    .blog-img1 , .blog-img2 {
+        height: 20rem;
+    }
+    .pre-post{
+        padding: 2rem 2rem 0 2rem;
+    }
+
+    .posts {
+        grid-template-columns: 1fr 1fr 1fr;
+        height: 5rem;
+        padding: 0 3rem 0 3rem
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .user-info {
+        padding: 0 2rem 2rem 2rem;
+    }
+    .fig-posts {
+       display: flex;
+       flex-direction: column;
+    }
+
+}
+
+
+@media screen and (min-width: 768px){
+    body {
+        overflow-x: hidden;
+    }
+    .blog-main {
+        margin: 2rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr 2fr;
+        grid-gap: 2rem;
+        border-bottom: 2px solid ;
+        /* display: flex; */
+        /* flex-direction: column; */
+    }
+  
+
+    .pre-post{
+        padding: 2rem 4rem 0 2rem;
+    }
+
+    .posts {
+        /* grid-template-columns: 1fr 1fr 1fr; */
+        height: 7rem;
+        padding: 0 4rem 0 4rem
+    }
+
+    .fig-posts {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .about {
+        display: flex;
+        align-items: center;
+    }
+
+    .user-info {
+        padding: 0 2rem 2rem 2rem;
+    }
+
+}
